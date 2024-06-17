@@ -16,14 +16,14 @@
 // Custom Modules:
 //
 //   - AddModuleLoader(moduleName string, moduleLoader starlet.ModuleLoader): Adds a custom module loader. Members can be accessed in the script via load("module_name", "member_name") or member_name.
-//   - AddModuleFunctions(name string, funcs FuncMap): Adds a module with custom functions. Functions can be accessed in the script via load("module_name", "func_name") or module_name.func_name.
-//   - AddModuleData(moduleName string, moduleData starlark.StringDict): Adds a module with custom data. Data can be accessed in the script via load("module_name", "key") or module_name.key.
-//   - AddStructFunctions(name string, funcs FuncMap): Adds a module with custom struct functions. Functions can be accessed in the script via load("struct_name", "func_name") or struct_name.func_name.
-//   - AddStructData(structName string, structData starlark.StringDict): Adds a module with custom struct data. Data can be accessed in the script via load("struct_name", "key") or struct_name.key.
+//   - AddModuleFunctions(name string, funcs FuncMap): Adds a module of custom functions. Functions can be accessed in the script via load("module_name", "func_name") or module_name.func_name.
+//   - AddModuleData(moduleName string, moduleData starlark.StringDict): Adds a module of custom data. Data can be accessed in the script via load("module_name", "key") or module_name.key.
+//   - AddStructFunctions(name string, funcs FuncMap): Adds a struct of custom functions. Functions can be accessed in the script via load("struct_name", "func_name") or struct_name.func_name.
+//   - AddStructData(structName string, structData starlark.StringDict): Adds a struct of custom data. Data can be accessed in the script via load("struct_name", "key") or struct_name.key.
 //
 // Dynamic Modules:
 //
-//   - SetDynamicModuleLoader(loader DynamicModuleLoader): Sets a dynamic module loader, which loads modules based on their names before execution, i.e. module names added by AddNamedModules or AddModulesByName.
+//   - SetDynamicModuleLoader(loader DynamicModuleLoader): Sets a dynamic module loader, which loads modules based on their names before execution. These module names should be defined using AddNamedModules or AddModulesByName.
 //
 // # Module Loading Priority
 //
