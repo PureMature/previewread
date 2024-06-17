@@ -5,7 +5,7 @@
 // Starbox supports various ways to load modules, including preloading built-in modules, adding custom modules, and dynamic module loading at runtime.
 //
 // Preloading Built-in Modules:
-//   - SetModuleSet(modSet ModuleSetName): Preloads a predefined set of modules before execution. Available sets include:
+// `SetModuleSet(modSet ModuleSetName)` defines a predefined set of modules to preload before execution. Available sets include:
 //   - EmptyModuleSet: No modules.
 //   - SafeModuleSet: Safe modules without side effects.
 //   - NetworkModuleSet: Safe modules plus network modules.
